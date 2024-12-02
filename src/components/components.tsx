@@ -31,7 +31,7 @@ export function Mystack() {
           My Tech Stack
         </h1>
         <p className=" text-xl text-gray-800">
-          Technology I've been working with
+          Technology I&apos;ve been working with
         </p>
       </div>
       <div className="grid grid-cols-4 gap-10 my-5 justify-center items-center ">
