@@ -17,7 +17,7 @@ export function About() {
         </p>
       </div>
       <div className="w-[350px] px-10">
-        <img className="object-cover rounded-[50%]" src="profil.jpg" />
+        <img className="object-cover rounded-[50%]" src="profil.jpeg" />
       </div>
     </div>
   );
@@ -52,10 +52,12 @@ export function Cards({
   projectPict,
   title,
   description,
+  link,
 }: {
   projectPict: string;
   title: string;
   description: string;
+  link: string;
 }) {
   return (
     <div>
@@ -73,7 +75,7 @@ export function Cards({
         </h2>
         <p>{description}</p>
         <p className="text-xs pt-2  ">Tech Stack: HTML, NextJs, React</p>
-        <a className="text-xs pt-2 font-medium flex " href="">
+        <a className="text-xs pt-2 font-medium flex " href={link}>
           <img className="w-3 pr-1" src="link.svg" alt="" /> See the preview
         </a>
       </div>
@@ -100,17 +102,20 @@ export function Projects() {
           projectPict="gojek.jpg"
           title="Gojek Landing Page Cloning"
           description="Make my first landing page web cloning using React and Tailwindcss. Try to do slicing manually from the Gojek landing page."
+          link="https://todolist-app-xi-one.vercel.app/"
         />
         <Cards
           projectPict="todolist.jpg"
           title="Todo List App UI"
           description="My second project is aimed at making the UI of the Todo List App that matches the requirements using Nextjs and Tailwindcss."
+          link="https://todolist-app-xi-one.vercel.app/"
         />
 
         <Cards
           projectPict="todolist.jpg"
           title="Personal Portfolio Web Project"
           description="This portfolio web page is my third project. Here, I can show briefly about myself, and what project I've built, then showcase it in card projects."
+          link="https://todolist-app-xi-one.vercel.app/"
         />
       </div>
     </div>
